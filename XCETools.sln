@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCETools", "XCETools\XCETools.csproj", "{D551E09C-A9F9-4B36-8CD4-1B494B773AAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D551E09C-A9F9-4B36-8CD4-1B494B773AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D551E09C-A9F9-4B36-8CD4-1B494B773AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D551E09C-A9F9-4B36-8CD4-1B494B773AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D551E09C-A9F9-4B36-8CD4-1B494B773AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70134E5B-C46F-4F66-AD54-5EFBB903CD7D}
+	EndGlobalSection
+EndGlobal
