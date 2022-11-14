@@ -55,98 +55,73 @@ namespace XCETools
 
         private void ToolBarItemClicked(object sender, EventArgs e)
         {
-            
-            if(sender.Equals(Search_1))
+            ToolStripMenuItem cntrl = (ToolStripMenuItem)sender;
+            switch (cntrl.Name)
             {
-                Type(Search1);
-                Search1.Text = "Search 1";
-                InitButton.Size = new Size(156, 27);
-                FromSearch1.Visible = false;
-                return;
-            }
-            else if (sender.Equals(Search_2))
-            {
-                Type(Search1);
-                Search1.Text = "Search 2";
-                InitButton.Size = new Size(70, 27);
-                FromSearch1.Visible = true;
-                return;
-            }
-            else if (sender.Equals(Memory))
-            {
-                Type(MemoryBox);
-                return;
-            }
-            else if (sender.Equals(Allocate))
-            {
-                Type(AllocateBox);
-                return;
-            }
-            if (sender.Equals(Breakpoint))
-            {
-                Type(BreakpointBox);
-                return;
-            }
-            if (sender.Equals(Go))
-            {
-                if (Go.Text == "Stop")
-                {
-                    Go.Text = "Go";
+                case "Search_1":
+                    Type(Search1);
+                    Search1.Text = "Search 1";
+                    InitButton.Size = new Size(156, 27);
+                    FromSearch1.Visible = false;
                     return;
-                }
-                else if (Go.Text == "Go")
-                {
-                    Go.Text = "Stop";
+                case "Search_2":
+                    Type(Search1);
+                    Search1.Text = "Search 2";
+                    InitButton.Size = new Size(70, 27);
+                    FromSearch1.Visible = true;
                     return;
-                }
+                case "Memory":
+                    Type(MemoryBox);
+                    return;
+                case "Allocate":
+                    Type(AllocateBox);
+                    return;
+                case "Breakpoint":
+                    Type(BreakpointBox);
+                    return;
+                case "Go":
+                    switch(Go.Text)
+                    {
+                        case "Stop":
+                            Go.Text = "Go";
+                            return;
+                        case "Go":
+                            Go.Text = "Stop";
+                            return;
+                    }
+                    break;
             }
         }
 
         private void Type(GroupBox c)
         {
-            if (c.Equals(Search1))
+            switch (c.Name)
             {
-                IsVisible(c, true);
-                IsVisible(AllocateBox, false);
-                IsVisible(MemoryBox, false);
-                IsVisible(BreakpointBox, false);
-                return;
+                case "Search1":
+                    IsVisible(c, true);
+                    IsVisible(AllocateBox, false);
+                    IsVisible(MemoryBox, false);
+                    IsVisible(BreakpointBox, false);
+                    return;
+                case "MemoryBox":
+                    IsVisible(AllocateBox, false);
+                    IsVisible(c, true);
+                    IsVisible(BreakpointBox, false);
+                    IsVisible(Search1, false);
+                    return;
+                case "AllocateBox":
+                    IsVisible(c, true);
+                    IsVisible(MemoryBox, false);
+                    IsVisible(BreakpointBox, false);
+                    IsVisible(Search1, false);
+                    return;
+                case "BreakpointBox":
+                    IsVisible(AllocateBox, false);
+                    IsVisible(MemoryBox, false);
+                    IsVisible(c, true);
+                    IsVisible(Search1, false);
+                    return;
             }
-            if (c.Equals(MemoryBox))
-            {
-                IsVisible(AllocateBox, false);
-                IsVisible(c, true);
-                IsVisible(BreakpointBox, false);
-                IsVisible(Search1, false);
-                return;
-            }
-            if (c.Equals(AllocateBox))
-            {
-                IsVisible(c, true);
-                IsVisible(MemoryBox, false);
-                IsVisible(BreakpointBox, false);
-                IsVisible(Search1, false);
-                return;
-            }
-            if (c.Equals(BreakpointBox))
-            {
-                IsVisible(AllocateBox, false);
-                IsVisible(MemoryBox, false);
-                IsVisible(c, true);
-                IsVisible(Search1, false);
-                return;
-            }
-            return;
-        }
-
-        private void DumpButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
