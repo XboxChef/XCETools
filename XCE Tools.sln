@@ -1,9 +1,11 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCE Tools", "XCETools\XCE Tools.csproj", "{D551E09C-A9F9-4B36-8CD4-1B494B773AAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XDCKIT", "XCETools\XDCKIT\XDCKIT.csproj", "{C1B198B6-ACDD-4861-86DD-B96BEFDEC50E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D551E09C-A9F9-4B36-8CD4-1B494B773AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D551E09C-A9F9-4B36-8CD4-1B494B773AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D551E09C-A9F9-4B36-8CD4-1B494B773AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1B198B6-ACDD-4861-86DD-B96BEFDEC50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B198B6-ACDD-4861-86DD-B96BEFDEC50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B198B6-ACDD-4861-86DD-B96BEFDEC50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B198B6-ACDD-4861-86DD-B96BEFDEC50E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

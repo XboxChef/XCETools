@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("XCETools")]
+[assembly: AssemblyTitle("XCE Atlas")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("TeddyTools")]
-[assembly: AssemblyProduct("XCETools")]
+[assembly: AssemblyProduct("XCE Atlas")]
 [assembly: AssemblyCopyright("TeddyTools Copyright ©  2021")]
 [assembly: AssemblyTrademark("TeddyTools")]
 [assembly: AssemblyCulture("")]
